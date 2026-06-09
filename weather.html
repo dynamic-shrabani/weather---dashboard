@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Details</title>
+
+    <link rel="stylesheet" href="weather.css">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="weatherAnimation"></div>
+
+    <div class="weather-page">
+
+        <div class="weather-left">
+
+            <div class="weather-report">
+
+                <div class="weather-report-left">
+
+                    <div class="weather-big-icon">
+                        <img id="weatherIcon" src="" alt="weatherIcon">
+                    </div>
+
+                    <div class="weather-report-content">
+
+                        <h1>
+                            📍 Live Weather Report
+                        </h1>
+
+                        <h2 id="weatherMessage">
+                            Loading weather...
+                        </h2>
+                        <p id="weatherDescription">Loading description...</p>
+
+                        <p>
+                            🔄 Last Updated:
+                            <span id="lastUpdated">
+                            </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="time-box">
+
+                    <h3>🕒 Current Time</h3>
+
+                    <div id="currentTime">
+                        07:24 PM
+                    </div>
+
+                    <p id="currentDate">
+                        Thursday, 15 May 2025
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="weather-info">
+                <div class="city-card-new">
+
+    <div class="city-left">
+
+        <h1 id="cityName">Bhubaneswar</h1>
+        <img id="conditionIcon" alt="Weather Icon">
+        <p class="location">
+            📍 <span id="countryName">Odisha, India</span>
+        </p>
+
+        <div class="temp-row">
+
+    <div class="current-temp">
+        <span id="temperature">28°</span>
+    </div>
+
+</div>
+
+        <p id="weatherCondition" class="condition">
+            Loading...
+        </p>
+
+        <p class="feels-like">
+            Feels Like <span id="feelsLike">31°</span>
+        </p>
+        </div>
+        <!-------- STATS HERE--------->
+            <div class="weather-stats">
+
+                    <div class="stat-card">
+                        <h4>🤗 Feels Like</h4>
+                        <p id="feelsLike">31°</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h4>💧 Humidity</h4>
+                        <p id="humidity">70%</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h4>🌬 Wind</h4>
+                        <p id="wind">12 km/h</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h4>📊 Pressure</h4>
+                        <p id="pressure">1012 hPa</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h4>👁️visibility</h4>
+                        <p id="visibility">0 km</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h4>☀️ UV Index</h4>
+                        <p id="UVIndex">Not Available</p>
+                    </div> 
+                </div>
+            </div>
+            </div>
+
+            <div class="air-quality-card">
+    <div class="aqi-left">
+        <h3>🍃 Air Quality</h3>
+        <div class="aqi-badge" id="aqiStatus">
+            Good 😊
+        </div>
+    </div>
+
+    <div class="aqi-center">
+        <h4 id="aqiMessage">
+            Great! The air quality is good and suitable for outdoor activities.
+        </h4>
+        <p id="aqiAdvice">
+            Keep enjoying your day! 🌿
+        </p>
+    </div>
+
+    <div class="aqi-right">
+        <div class="aqi-circle">
+            <span id="aqiValue">32</span>
+            <small>AQI</small>
+        </div>
+    </div>
+</div>
+
+            <div class="forecast-section">
+
+                <h2>🌥️5-Day Forecast</h2>
+                <div id="forecastContainer" class="forecast-grid"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="button-group">
+        <a href="explore.html" class="explore-btn">
+            Explore More →</a>
+        <a href="index.html" class="back-btn">
+            ⬅ Back To Home
+        </a>
+    </div>
+
+    <p class="footer-note">
+        🎯Real-Time Weather Insights for Better Planning 🌤️
+    </p>
+    <script src="script.js"></script>
+</body>
+
+</html>

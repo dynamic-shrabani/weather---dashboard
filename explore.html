@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Tips & Features</title>
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+
+    <div class="tips-container">
+
+        <header class="hero-section">
+            <h1>🌦️ Weather Tips & Features</h1>
+            <p>Helpful weather guidance and project highlights.</p>
+        </header>
+
+        <!-- Weather Tips -->
+
+        <section class="section">
+            <h2>🌤️ Weather Tips</h2>
+
+            <div class="tips-grid">
+
+                <div class="tip-card">
+                    <h3>☀️ Sunny Weather</h3>
+                    <p>Wear sunglasses, stay hydrated and avoid long exposure to direct sunlight.</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>🌧️ Rainy Weather</h3>
+                    <p>Carry an umbrella and drive carefully on wet roads.</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>🌫️ Foggy Weather</h3>
+                    <p>Use low-beam headlights and maintain safe driving distance.</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>⛈️ Thunderstorm</h3>
+                    <p>Stay indoors and avoid open areas during lightning activity.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Features -->
+
+        <section class="section">
+            <h2>🚀 Project Features</h2>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <span>📍</span>
+                    <p>City Weather Search</p>
+                </div>
+
+                <div class="feature-card">
+                    <span>🌡️</span>
+                    <p>Live Temperature Data</p>
+                </div>
+
+                <div class="feature-card">
+                    <span>☁️</span>
+                    <p>Weather Conditions</p>
+                </div>
+
+                <div class="feature-card">
+                    <span>📅</span>
+                    <p>5-Day Forecast</p>
+                </div>
+
+                <div class="feature-card">
+                    <span>💧</span>
+                    <p>Humidity Tracking</p>
+                </div>
+
+                <div class="feature-card">
+                    <span>🌬️</span>
+                    <p>Wind Information</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Project -->
+
+        <section class="section about-project">
+            <h2>📖 About This Project</h2>
+
+            <p>
+                This Weather Forecast Application provides real-time weather
+                information using the OpenWeather API. Users can search any city,
+                view current weather conditions, forecast details, and important
+                weather statistics through a responsive and user-friendly interface.
+            </p>
+        </section>
+
+        <!-- Back Button -->
+
+       <a id="backToWeather" class="back-btn" href="#"><-Back</a>
+        <!-- Footer -->
+
+        <footer>
+            <p>© 2026 Weather Forecast Application</p>
+            <p>Designed & Developed by <strong>Shrabani Bhutia ❤️.</strong></p>
+            <p>Powered by OpenWeather API</p>
+        </footer>
+
+    </div>
+    <script>
+const lastCity = localStorage.getItem("lastCity") || "Bhubaneswar";
+
+document.getElementById("backToWeather").href =
+`weather.html?city=${lastCity}`;
+</script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Weather Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Floating Bubbles -->
+
+<div class="bubbles">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<!-- Floating Clouds -->
+
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="cloud cloud3"></div>
+
+<!-- Main Container -->
+
+<div class="landing-container">
+<div class="glass-card">
+<h1 class="title">
+🌦️ WEATHER DASHBOARD
+</h1>
+
+<p class="subtitle">
+Real-Time Weather Insights Around The World
+</p>
+
+<div class="search-container">
+
+<input type="text" id="cityInput"placeholder="Enter City name."></input>
+
+<button id="searchBtn">
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Search
+
+</button>
+<p class="search-hint">Try : Bhubaneswar , Delhi , London , Tokyo</p>
+
+</div>
+
+<div class="feature-grid">
+<div class="feature-card">
+🌡️ Live Temperature
+</div>
+
+<div class="feature-card">
+💧Humidity
+</div>
+
+<div class="feature-card">
+🌬️ Wind Speed
+</div>
+
+<div class="feature-card">
+📊 Pressure
+</div>
+
+<div class="feature-card">
+👀 Visibility
+</div>
+
+<div class="feature-card">
+📅 5-Day Forecast
+</div>
+
+</div>
+<button class="explore-btn"onclick="goToWeather()">🌍Explore Weather -></button>
+</div>
+</div>
+<div class="hero-stats">
+    <div class="stat-card">
+        🌍200,000+ Cities Supported 
+    </div>
+    <div class="stat-card">
+        ⚡Real-Time Weather Updates
+    </div>
+    <div class="stat-card">
+        📊 Accurate 5-Day Forecast
+    </div>
+</div>
+<footer class="landing-footer">
+    Built with 💖 using HTML . CSS > Javascript . OpenWeather API
+</footer>
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
