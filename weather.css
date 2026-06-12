@@ -382,9 +382,7 @@ body{
 @media(max-width:480px){
     .weather-grid{
         grid-template-columns: 1fr;
-    }
 }
-
 .air-quality{
 grid-template-columns:1fr;
 gap:25px;
@@ -397,6 +395,7 @@ grid-template-columns:repeat(2,1fr);
 
 .weather-card{
 flex-direction:column;
+}
 }
 
 .city-card h1{
@@ -685,37 +684,39 @@ font-size:90px;
 /*Mobile pai*/
 @media (max-width:768px){
 
-  .weather-container,
-  .main-container{
-    width:95% !important;
-    margin:auto;
-  }
+    .weather-page{
+        flex-direction:column;
+    }
 
-  .city-name{
-    font-size:3rem !important;
-  }
+    .weather-report{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
 
-  .weather-card{
-    width:100% !important;
-  }
+    .weather-report-content h1{
+        font-size:2rem;
+        white-space:normal;
+    }
 
-  .details-grid{
-    display:grid !important;
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-  }
+    #cityName{
+        font-size:45px;
+    }
 
-  .top-section{
-    display:flex;
-    flex-direction:column;
-  }
+    .current-temp span{
+        font-size:70px;
+    }
 
-  .forecast-container{
-    display:grid;
-    grid-template-columns:1fr;
-  }
+    .weather-stats{
+        grid-template-columns:1fr;
+    }
 
-  body{
-    overflow-x:hidden;
-  }
+    .forecast-grid{
+        grid-template-columns:1fr;
+    }
+
+    .city-card-new{
+        flex-direction:column;
+        text-align:center;
+    }
 }
