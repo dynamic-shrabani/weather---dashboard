@@ -797,5 +797,7 @@ font-size:90px;
     }
     .forecast-title{
         white-space: nowrap;
+        font-size: clamp(2rem, 7vw, 3rem);
+        display: inline-block;
     }
 }
