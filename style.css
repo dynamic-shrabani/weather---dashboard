@@ -1319,5 +1319,40 @@ opacity:0.2;
 50%{
 opacity:1;
 }
-
 }
+
+/*Mobile pai*/
+@media (max-width: 768px){
+
+  .container,
+  .glass-card,
+  .hero-card{
+    width: 95% !important;
+    margin: auto;
+  }
+
+  h1{
+    font-size: 2.2rem !important;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  input{
+    width: 100% !important;
+  }
+
+  button{
+    width: 100% !important;
+  }
+
+  .search-container{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+
+  body{
+    overflow-x:hidden;
+  }
+}
+

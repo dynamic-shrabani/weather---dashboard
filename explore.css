@@ -167,3 +167,27 @@ footer strong{
         padding:20px;
     }
 }
+/*Mobile pai*/
+@media (max-width:768px){
+
+  .explore-container{
+    width:95% !important;
+    margin:auto;
+  }
+
+  .card{
+    width:100% !important;
+  }
+
+  .grid{
+    grid-template-columns:1fr !important;
+  }
+
+  h1{
+    font-size:2rem !important;
+  }
+
+  body{
+    overflow-x:hidden;
+  }
+}
