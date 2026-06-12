@@ -795,4 +795,7 @@ font-size:90px;
         max-width: 100%;
         padding: 0 10px;
     }
+    .forecast-title{
+        white-space: nowrap;
+    }
 }
