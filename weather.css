@@ -392,6 +392,10 @@ text-align:center;
 .forecast-grid{
 grid-template-columns:repeat(2,1fr);
 }
+.forecast-section h2{
+    font-size: 2.5rem !important;
+    white-space: nowrap ;
+}
 
 .weather-card{
 flex-direction:column;
@@ -795,10 +799,11 @@ font-size:90px;
         max-width: 100%;
         padding: 0 10px;
     }
-    .forecast-title{
+    .forecast-section h2{
         white-space: nowrap;
-        font-size: clamp(2rem, 7vw, 3rem);
+        font-size: 3rem;
         display: inline-block;
+        width: max-content;
     }
     .forecast-heading{
         width: 100%;
