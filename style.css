@@ -1350,8 +1350,9 @@ opacity:1;
     flex-direction:column;
     gap:12px;
   }
-
+  html,
   body{
+    width: 100%;
     overflow-x:hidden;
   }
 }

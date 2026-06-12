@@ -695,6 +695,7 @@ font-size:90px;
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;
+        padding: 20px 10px;
     }
     body{
         overflow-x: hidden;
@@ -744,8 +745,10 @@ font-size:90px;
     }
 
     #cityName{
-        font-size:45px !important;
-        word-break: break-word;
+        font-size:clamp(2rem, 7vw, 3rem);
+        word-break: keep-all;
+        white-space: normal;
+        overflow-wrap: normal;
     }
 
     .current-temp span{
@@ -774,5 +777,22 @@ font-size:90px;
     }
     #forecastContainer{
         grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .weather-card{
+        width: calc(100% - 20px);
+        max-width: none;
+        margin: 20px auto;
+    }
+    .report-box{
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+    .footer-content,
+    .footer-text{
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
     }
 }
